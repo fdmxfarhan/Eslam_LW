@@ -1,0 +1,41 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+adc                                                                               0x0160      32
+shb                                                                               0x0180       2
+shr                                                                               0x0182       2
+e                                                                                 0x0184       2
+_base_y                                                                           0x0186       4
+_lcd_x                                                                            0x018A       1
+_lcd_y                                                                            0x018B       1
+_lcd_maxx                                                                         0x018C       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+cmp                                                                               R4,R5        2
+c                                                                                 R6,R7        2
+i                                                                                 R8,R9        2
+adc_min                                                                           R10,R11      2
+shl                                                                               R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+compass_read                                                                      0x0005C     35
+read_adc                                                                          0x0007F     15
+read_cmp                                                                          0x0008E     71
+read_sensor                                                                       0x000D5    192
+motor                                                                             0x00195    188
+shift                                                                             0x00251    205
+main                                                                              0x0031E    136
+_lcd_write_nibble_G100                                                            0x003A6     20
+_lcd_write_data                                                                   0x003BA     12
+lcd_gotoxy                                                                        0x003C6     17
+lcd_clear                                                                         0x003D7     12
+lcd_putchar                                                                       0x003E3     31
+lcd_init                                                                          0x00402     41

@@ -1,0 +1,49 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+adc                                                                               0x0160      32
+shr                                                                               0x0180       2
+e                                                                                 0x0182       2
+kr                                                                                0x0184       2
+kb                                                                                0x0186       2
+kf                                                                                0x0188       2
+kl                                                                                0x018A       2
+_base_y                                                                           0x018C       4
+_lcd_x                                                                            0x0190       1
+_lcd_y                                                                            0x0191       1
+_lcd_maxx                                                                         0x0192       1
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+c                                                                                 0x0000       2
+sf                                                                                0x0002       2
+sr                                                                                0x0004       2
+sb                                                                                0x0006       2
+sl                                                                                0x0008       2
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+cmp                                                                               R4,R5        2
+i                                                                                 R6,R7        2
+adc_min                                                                           R8,R9        2
+shl                                                                               R10,R11      2
+shb                                                                               R12,R13      2
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+compass_read                                                                      0x0005C     35
+read_adc                                                                          0x0007F     15
+read_cmp                                                                          0x0008E     75
+read_sensor                                                                       0x000D9    265
+motor                                                                             0x001E2    188
+move                                                                              0x0029E    207
+main                                                                              0x0036D    257
+_lcd_write_nibble_G100                                                            0x0046E     20
+_lcd_write_data                                                                   0x00482     12
+lcd_gotoxy                                                                        0x0048E     17
+lcd_clear                                                                         0x0049F     12
+lcd_putchar                                                                       0x004AB     31
+lcd_init                                                                          0x004CA     41
